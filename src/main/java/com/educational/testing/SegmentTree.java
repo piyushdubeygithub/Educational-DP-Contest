@@ -6,8 +6,9 @@ public class SegmentTree {
         int[] tree = new int[24];
         buildTree(tree, 1, 0,5, a);
         for(int i=0;i<24;i++){
-            System.out.println(tree[i]);
+           // System.out.println(tree[i]);
         }
+        System.out.println(query(tree, 1, 0, 5, 3, 4));
     }
 
     private static void buildTree(int[] tree, int tindex, int start, int end, int[] a) {
@@ -28,7 +29,7 @@ public class SegmentTree {
         }
 
         // complete overrlap
-        if(qs>=ns && ne<=qe){
+        if(ns>=qs && ne<=qe){
             return tree[tIndex];
         }
 
