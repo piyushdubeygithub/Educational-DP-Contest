@@ -9,6 +9,8 @@ public class SegmentTree {
            // System.out.println(tree[i]);
         }
         System.out.println(query(tree, 1, 0, 5, 3, 4));
+        updateNode(tree, 1, 0, 5, 3, 6);
+        System.out.println(query(tree, 1, 0, 5, 3, 4));
     }
 
     private static void buildTree(int[] tree, int tindex, int start, int end, int[] a) {
@@ -41,4 +43,21 @@ public class SegmentTree {
 
     }
 
+    private static void updateNode(int[] tree, int tIndex, int ns, int ne, int i, int val){
+        //No overlap
+        if(i>ne || i<ns){
+            return;
+        }
+        //reached leaf node (complete overlap)
+        if(ns == ne){
+            tree[tIndex] = val;
+            return;
+        }
+        //partial overlap
+        int mid = (ns+ne)/2;
+        updateNode(tree, 2*tIndex, ns, mid, i, val);
+        updateNode(tree, 2*tIndex+1, mid+1, ne, i, val);
+        tree[tIndex] = tree[2*tIndex] + tree[2*tIndex+1];
+        return;
+    }
 }
