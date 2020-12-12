@@ -2,15 +2,15 @@ package com.educational.testing;
 
 public class SegmentTree {
     public static void main(String[] args) {
-        int[] a = new int[]{1,2,3,4,5,6};
-        int[] tree = new int[24];
-        buildTree(tree, 1, 0,5, a);
+        int[] a = new int[]{1,3,5};
+        int[] tree = new int[13];
+        buildTree(tree, 1, 0,2, a);
         for(int i=0;i<24;i++){
            // System.out.println(tree[i]);
         }
-        System.out.println(query(tree, 1, 0, 5, 3, 4));
-        updateNode(tree, 1, 0, 5, 3, 6);
-        System.out.println(query(tree, 1, 0, 5, 3, 4));
+        System.out.println(query(tree, 1, 0, 2, 0, 2));
+        updateNode(tree, 1, 0, 2, 1, 2);
+        System.out.println(query(tree, 1, 0, 2, 0, 2));
     }
 
     private static void buildTree(int[] tree, int tindex, int start, int end, int[] a) {
