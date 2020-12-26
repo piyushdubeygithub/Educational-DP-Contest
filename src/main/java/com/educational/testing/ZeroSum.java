@@ -32,11 +32,11 @@ public class ZeroSum {
             if(sum == 0){
                 Pair pair = new Pair(0, i);
                 zeroList.add(pair);
-                ArrayList<Integer> list = sumMap.get(0);
-                if(list == null){
-                    list = new ArrayList<>();
-                }
-                list.add(i);
+//                ArrayList<Integer> list = sumMap.get(0);
+//                if(list == null){
+//                    list = new ArrayList<>();
+//                }
+//                list.add(i);
             }
             if(sumMap.containsKey(sum)){
                 ArrayList<Integer> list = sumMap.get(sum);

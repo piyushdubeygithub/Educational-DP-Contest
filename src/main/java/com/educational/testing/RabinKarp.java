@@ -5,8 +5,8 @@ public class RabinKarp {
     public final static int d = 256;
 
     public static void main(String[] args) {
-        String txt = "GEEKS FOR GEEKS";
-        String pat = "GEEK";
+        String txt = "piyush dubey is piyush ";
+        String pat = "piyush";
 
         // A prime number
         int q = 101;
