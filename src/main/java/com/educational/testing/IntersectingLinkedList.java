@@ -1,5 +1,7 @@
 package com.educational.testing;
 
+import java.util.LinkedList;
+
 public class IntersectingLinkedList {
 
     static Node head1, head2;
@@ -14,17 +16,19 @@ public class IntersectingLinkedList {
     }
 
     public static void main(String[] args) {
-
+        IntersectingLinkedList list = new IntersectingLinkedList();
         // creating first linked list
-        head1 = new Node(3);
-        head1.next = new Node(6);
-        head1.next.next = new Node(19);
-        head1.next.next.next = new Node(15);
-        head1.next.next.next.next = new Node(30);
+        list.head1 = new Node(3);
+        list.head1.next = new Node(6);
+        list.head1.next.next = new Node(10);
+        list.head1.next.next.next = new Node(15);
+        list.head1.next.next.next.next = new Node(30);
         // creating second linked list
-        head2 = new Node(10);
-        head2.next = new Node(15);
-        head2.next.next = new Node(30);
+        list.head2 = new Node(10);
+        list.head2.next = list.head1.next.next.next;
+        list.head2.next.next = list.head1.next.next.next.next;
+
+
 
         System.out.println("The node of intersection is " + getNode());
 
@@ -50,7 +54,7 @@ public class IntersectingLinkedList {
             temp1 = temp1.next;
         }
         while(temp1 != null && temp2 != null){
-            if(temp1.data == temp2.data){
+            if(temp1==temp2){
                 return temp1.data;
             }
             temp1 = temp1.next;
