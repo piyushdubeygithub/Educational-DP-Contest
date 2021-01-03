@@ -29,9 +29,25 @@ public class IntersectingLinkedList {
         list.head2.next.next = list.head1.next.next.next.next;
 
 
-
+        // method 1
         System.out.println("The node of intersection is " + getNode());
 
+        // method 2
+        System.out.println("The node of intersection is " + getIntersectedNode(head1, head2));
+
+    }
+
+    private static int getIntersectedNode(Node head1, Node head2) {
+        if(head1 == null || head2 == null){
+            return -1;
+        }
+        Node temp1 = head1;
+        Node temp2 = head2;
+        while(temp1 != temp2){
+            temp1 = temp1 == null?head2:temp1.next;
+            temp2 = temp2 == null?head1:temp2.next;
+        }
+            return temp1.data;
     }
 
     private static int getNode() {
