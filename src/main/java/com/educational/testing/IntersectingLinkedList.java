@@ -76,6 +76,8 @@ public class IntersectingLinkedList {
             temp1 = temp1.next;
             temp2 = temp2.next;
         }
+        temp1 = null;
+        temp1 = null;
         return -1;
     }
 
