@@ -47,6 +47,7 @@ we new number.
         if (max1.isPresent() && max1.getAsInt() > max) {
             max = max1.getAsInt();
         }
+        // to avoid collision of 0
         max++;
         int i = 0, j = 0, k = 0;
         while (i < m && j < n) {
