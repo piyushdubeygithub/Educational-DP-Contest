@@ -28,6 +28,7 @@ public class ZeroSum {
         ArrayList<Pair> zeroList = new ArrayList<>();
         int sum = 0;
         for(int i=0;i<n;i++){
+            //prefix sum
             sum += a[i];
             if(sum == 0){
                 Pair pair = new Pair(0, i);
