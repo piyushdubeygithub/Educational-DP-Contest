@@ -1,4 +1,5 @@
 By definition, each and every element in a set is unique and there are no duplicate elements in it.
+
 import java.util.HashSet;
 public class Test {
     public static void main(String[] args) {
@@ -11,6 +12,7 @@ public class Test {
         System.out.println(hashSet); //[123, String, true]
     }
 }
+    
 
 When you pass duplicate element in the add() method of the Set object ,it will return false and does not add it to the HashSet since the element is already present.
 
