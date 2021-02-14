@@ -1,7 +1,5 @@
 package com.educational.testing;
 
-import java.util.LinkedList;
-
 public class IntersectingLinkedList {
 
     static Node head1, head2;

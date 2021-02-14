@@ -1,0 +1,1 @@
+https://medium.com/doku-insight/solid-principles-with-example-7bd77972787b
