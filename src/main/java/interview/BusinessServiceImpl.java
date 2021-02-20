@@ -1,9 +1,11 @@
 package interview;
 
+import java.util.HashSet;
+
 public class BusinessServiceImpl implements BusinessService{
     private Integer hotelFine = 50;
     private Integer hotelCharge = 200;
-
+    HashSet set = new HashSet();
     @Override
     public void addAmount(User user, Integer amount) {
         int userAmount = user.getAmount();

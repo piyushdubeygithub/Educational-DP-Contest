@@ -1,0 +1,1 @@
+Objects are everything you are looking at ur surrounding.Objects has some properties and behaviours which are represented by class variables and methods.
