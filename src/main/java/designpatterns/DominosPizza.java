@@ -1,4 +1,4 @@
-package com.educational.testing;
+package designpatterns;
 
 public class DominosPizza implements PizzaStore{
 

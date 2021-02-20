@@ -1,4 +1,6 @@
-package com.educational.testing;
+package javabasics;
+
+import com.educational.testing.Age;
 
 public class ImmutableTest {
     public static void main(String[] args) {

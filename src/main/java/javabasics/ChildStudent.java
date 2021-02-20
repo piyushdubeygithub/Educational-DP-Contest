@@ -1,4 +1,4 @@
-package com.educational.testing;
+package javabasics;
 
 //public class ChildStudent extends ImmutableStudent{
 //     private int id = 0;
