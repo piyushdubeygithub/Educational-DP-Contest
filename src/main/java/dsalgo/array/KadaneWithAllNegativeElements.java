@@ -1,4 +1,4 @@
-package dsalgo;
+package dsalgo.array;
 
 public class KadaneWithAllNegativeElements {
     public static void main(String[] args) {

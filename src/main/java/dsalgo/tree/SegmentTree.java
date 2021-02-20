@@ -1,4 +1,4 @@
-package com.educational.testing;
+package dsalgo.tree;
 
 public class SegmentTree {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package dsalgo;
+package dsalgo.array;
 
 import java.util.Collections;
 import java.util.PriorityQueue;

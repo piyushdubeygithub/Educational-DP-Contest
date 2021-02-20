@@ -1,4 +1,4 @@
-package com.educational.testing;
+package dsalgo.string;
 
 public class RabinKarp {
     // d is the number of characters in the alphabet

@@ -1,4 +1,4 @@
-package dsalgo;
+package dsalgo.array;
 
 public class NegativePositiveSide {
     public static void main(String[] args) {

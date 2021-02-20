@@ -1,4 +1,4 @@
-package com.educational.testing;
+package dsalgo.linkedlist;
 
 public class IntersectingLinkedList {
 

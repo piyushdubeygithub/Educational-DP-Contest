@@ -1,4 +1,4 @@
-package com.educational.testing;
+package dsalgo.array;
 
 import java.util.ArrayList;
 import java.util.HashMap;

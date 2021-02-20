@@ -1,4 +1,4 @@
-package dsalgo;
+package dsalgo.array;
 
 import java.util.Arrays;
 import java.util.LinkedList;
