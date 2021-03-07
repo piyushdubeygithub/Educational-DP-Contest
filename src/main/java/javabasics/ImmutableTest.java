@@ -1,7 +1,5 @@
 package javabasics;
 
-import com.educational.testing.Age;
-
 public class ImmutableTest {
     public static void main(String[] args) {
         Age age = new Age(1972, 1, 1);

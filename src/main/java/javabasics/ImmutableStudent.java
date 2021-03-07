@@ -1,7 +1,5 @@
 package javabasics;
 
-import com.educational.testing.Age;
-
 public  final class ImmutableStudent {
      final private int id;
      final private String name;

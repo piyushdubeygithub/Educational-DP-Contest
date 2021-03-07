@@ -1,4 +1,4 @@
-package com.educational.testing;
+package javabasics;
 
 public class Age {
     private int year;
