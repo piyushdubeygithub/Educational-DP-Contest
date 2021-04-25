@@ -48,19 +48,19 @@ we new number.
             max = max1.getAsInt();
         }
         // to avoid collision of 0
-        max++;
-        int i = 0, j = 0, k = 0;
-        while (i < m && j < n) {
-            int e1 = arr1[i] % max;
-            int e2 = arr2[j] % max;
+        max++; // incremented here as it is N which should be greater than A and B
+        int i = 0, j = 0, k = 0;// k is the index till which sorted elements are stored
+        while (i < m && j < n) { // simultaneous iteration of both arrays
+            int e1 = arr1[i] % max; // picked 1 element from 1st array doing mod max as there can be case when we have stored A+B*N here but this position may not be smaller in that case in next iteration we need to again get the A from A+B*N by doing mod N
+            int e2 = arr2[j] % max; // picked 1 element from 2nd array
             if (e1 < e2) {
                 int min = e1;
-                if (k < m) {
-                    arr1[k] += max * min;
+                if (k < m) { // if k is less than m than we can directly store element in Ist array
+                    arr1[k] += max * min;// here A= arr1[k], B= min, N = max
                 } else {
-                    arr2[k - m] += max * min;
+                    arr2[k - m] += max * min;//else we need to store element in 2nd array
                 }
-                i++;
+                i++; // here 1st array element was smaller
                 k++;
             } else {
                 int min = e2;
@@ -69,11 +69,11 @@ we new number.
                 } else {
                     arr2[k - m] += max * min;
                 }
-                j++;
+                j++; // here 2nd array element was smaller
                 k++;
             }
         }
-        while (i < m) {
+        while (i < m) { // if size of 1st array is greater
             int min = arr1[i] % max;
             if (k < m) {
                 arr1[k] += max * min;
@@ -83,7 +83,7 @@ we new number.
             i++;
             k++;
         }
-        while (j < n) {
+        while (j < n) { // if size of 2nd array is greater
             int min = arr2[j] % max;
             if (k < m) {
                 arr1[k] += max * min;
@@ -93,11 +93,11 @@ we new number.
             j++;
             k++;
         }
-        for (int p = 0; p < m; p++) {
-            arr1[p] = arr1[p] / max;
+        for (int p = 0; p < m; p++) { // iterate 1st array
+            arr1[p] = arr1[p] / max; // final ans
         }
-        for (int p = 0; p < n; p++) {
-            arr2[p] = arr2[p] / max;
+        for (int p = 0; p < n; p++) { // iterate 2nd array
+            arr2[p] = arr2[p] / max; // final ans
         }
     }
 

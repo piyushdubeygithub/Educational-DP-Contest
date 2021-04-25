@@ -1,0 +1,1 @@
+https://stackoverflow.com/questions/28049094/replacing-if-else-statement-with-pattern
